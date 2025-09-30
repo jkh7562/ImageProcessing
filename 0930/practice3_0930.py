@@ -2,8 +2,8 @@ import cv2
 from Common.utils import print_matInfo
 
 title1, title2 = "16bit unchanged", "32bit unchanged"
-color2unchanged1 = cv2.imread("/Users/jgh/PycharmProjects/ImageProcessing/Image/read_16.tif", cv2.IMREAD_UNCHANGED)
-color2unchanged2 = cv2.imread("/Users/jgh/PycharmProjects/ImageProcessing/Image/read_32.tif", cv2.IMREAD_UNCHANGED)
+color2unchanged1 = cv2.imread("../Image/read_16.tif", cv2.IMREAD_UNCHANGED)
+color2unchanged2 = cv2.imread("../Image/read_32.tif", cv2.IMREAD_UNCHANGED)
 if color2unchanged1 is None or color2unchanged2 is None:
     raise Exception("영상파일 읽기 에러")
 
